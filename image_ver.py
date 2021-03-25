@@ -22,7 +22,7 @@ degreeStr   = 'Degree: '    # 각도 확인용
 red         = (0,0,255)
 yellow      = (0,255,0)
 
-image = cv2.imread('TestTrack3.png')
+image = cv2.imread('TestTrack1.png')
 
 # 새눈 함수
 birdView = correct.bird_eye_view(image)
@@ -79,5 +79,5 @@ k = cv2.waitKey(0)
 if k == 27:# ESC키
     cv2.destroyAllWindows();
 elif k == ord('s'): #저장하기 버튼
-    cv2.imwrite("test4.png",combo_image)
+    cv2.imwrite("resultImage.png",combo_image)
     cv2.destroyAllWindows();
